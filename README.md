@@ -1,5 +1,7 @@
 # GCal Panel Resizer
 
+<img width="2560" height="1259" alt="gcal" src="https://github.com/user-attachments/assets/1768ddd4-77e8-4a42-935f-738827d4d660" />
+
 Google カレンダーの右サイドパネル（ToDo リスト、Keep、Maps など）の幅を、左端のドラッグで変更する Chrome 拡張機能です。変更した幅は保存され、再読み込みやパネルを開き直したときに復元されます。
 
 ## できること
