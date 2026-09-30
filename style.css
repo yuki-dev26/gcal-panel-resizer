@@ -1,0 +1,71 @@
+.gcal-panel-resizer-handle {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 7px !important;
+  height: auto !important;
+  z-index: 2147483646 !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: ew-resize !important;
+  background: transparent !important;
+  border: 0 solid transparent !important;
+  border-left: 2px solid rgba(128, 134, 139, 0.35) !important;
+  touch-action: none !important;
+  user-select: none !important;
+  pointer-events: auto !important;
+}
+
+.gcal-panel-resizer-handle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -6px;
+  width: 18px;
+}
+
+.gcal-panel-resizer-handle[data-edge="right"] {
+  border-left-width: 0 !important;
+  border-right: 2px solid rgba(128, 134, 139, 0.35) !important;
+}
+
+.gcal-panel-resizer-handle[data-edge="right"]::before {
+  left: auto;
+  right: -6px;
+}
+
+.gcal-panel-resizer-handle:hover,
+.gcal-panel-resizer-handle.is-dragging {
+  background: rgba(26, 115, 232, 0.18) !important;
+  border-left-color: #1a73e8 !important;
+}
+
+.gcal-panel-resizer-handle[data-edge="right"]:hover,
+.gcal-panel-resizer-handle[data-edge="right"].is-dragging {
+  border-right-color: #1a73e8 !important;
+  border-left-color: transparent !important;
+}
+
+.resize-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: block !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  cursor: ew-resize !important;
+  user-select: none !important;
+  pointer-events: auto !important;
+}
+
+html.gcal-panel-resizer-dragging,
+html.gcal-panel-resizer-dragging * {
+  cursor: ew-resize !important;
+  user-select: none !important;
+}
